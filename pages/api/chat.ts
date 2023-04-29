@@ -11,7 +11,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const api = new ChatGPTAPI({
-    apiKey: process.env.OPENAI_API_KEY || '', // Your OpenAI API Key
+    apiKey: process.env.OPENAI_API_KEY || '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', // Your OpenAI API Key
   });
 
   const openAiRes = await api.sendMessage(req.body.message);
